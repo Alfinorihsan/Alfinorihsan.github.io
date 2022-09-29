@@ -1,0 +1,310 @@
+:root {
+  --primary: #c89093;
+  --secondary: #ecd9db;
+  --text: #333;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col, 
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+  width: 100%;
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+.align-content-start {
+  align-content: flex-start !important;
+}
+
+.align-content-end {
+  align-content: flex-end !important;
+}
+
+.align-content-center {
+  align-content: center !important;
+}
+
+.align-content-between {
+  align-content: space-between !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif!important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none!important;
+  color: var(--text)!important;
+}
+
+
+.tombol {
+  padding: 20px 30px;
+  background: var(--primary);
+  color: #fff!important;
+}
+
+.tombol-kedua {
+  padding: 20px 30px;
+  background: #333;
+  color: #fff!important;
+}
+
+header {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 30px;
+}
+header #logo {
+  height: 90px;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  flex: 1;
+}
+
+header nav ul li {
+  font-size: 20px;
+  position: relative;
+}
+
+header nav ul li a {
+  text-decoration: none!important;
+}
+
+header nav ul li a.active {
+  font-weight: bold;
+  color: var(--primary)!important;
+}
+
+header nav .tombol {
+  padding: 10px 30px;
+}
+
+#bagian-atas,
+#bagian-tengah {
+  padding: 50px;
+}
+
+#bagian-atas img {
+  height: 400px;
+  border-radius: 30px;
+}
+
+#bagian-atas h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  margin-bottom: 0px!important;
+  line-height: 3rem!important;
+}
+
+#bagian-atas p {
+  margin-top: 20px!important;
+}
+
+#bagian-atas .tempat-tombol {
+  margin-top: 2.5rem;
+}
+
+#bagian-tengah {
+  background: #eee;
+}
+
+#bagian-tengah h2 {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+#bagian-tengah .pembungkus-langkah {
+  padding: 10px;
+}
+
+#bagian-tengah .langkah-langkah {
+  background: #fff;
+  border-radius: 30px;
+}
+
+#bagian-tengah .langkah-langkah img {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-size: cover;
+  object-fit: cover;
+  height: 300px;
+}
+
+#bagian-tengah .langkah-langkah .penjelas-langkah {
+  padding: 20px;
+}
+
+#bagian-tengah .langkah-langkah h2 {
+  margin: 0px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#bagian-tengah .langkah-langkah p {
+  margin-top: 0px;
+  font-weight: 400;
+}
+
+#tentang {
+  min-height: 90vh;
+  padding: 50px;
+}
+
+#tentang img {
+  height: 400px;
+  border-radius: 30px;
+}
+
+#tentang h1 {
+  color: var(--primary);
+  font-size: 3rem;
+  margin-bottom: 0px!important;
+  line-height: 3rem!important;
+}
+
+#tentang p {
+  margin-top: 20px!important;
+}
+
+#tentang ul li {
+  font-size: 18px;
+}
+
+footer {
+  background: #333;
+  padding: 10px 0px;
+}
+
+footer img {
+  height: 90px;
+}
+
+footer p {
+  margin: 0px!important;
+  color: #fff;
+}
